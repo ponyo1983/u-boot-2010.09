@@ -31,7 +31,7 @@ monitor memU32 0xFFFFFC28 = 0x27CFBFA0
 monitor memU32 0xFFFFFC30 = 0x00000102
 
 #Setup PLLB
-monitor memU32 0xFFFFFC2C = 0x10483E0E
+monitor memU32 0xFFFFFC2C = 0x20B33E0F
 
 
 
