@@ -342,8 +342,10 @@ static int scan_block_full(struct mtd_info *mtd, struct nand_bbt_descr *bd,
 static int scan_block_fast(struct mtd_info *mtd, struct nand_bbt_descr *bd,
 			   loff_t offs, uint8_t *buf, int len)
 {
+
 	struct mtd_oob_ops ops;
 	int j, ret;
+	loff_t  addr=offs;
 
 	ops.ooblen = mtd->oobsize;
 	ops.oobbuf = buf;
@@ -357,6 +359,7 @@ static int scan_block_fast(struct mtd_info *mtd, struct nand_bbt_descr *bd,
 		 * handle single byte reads for 16 bit
 		 * buswidth
 		 */
+
 		ret = mtd->read_oob(mtd, offs, &ops);
 		if (ret)
 			return ret;
