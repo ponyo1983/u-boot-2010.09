@@ -13,7 +13,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration buildProperties="" id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.toolchain.base.355152713" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+				<configuration artifactName="u-boot-2010.09" buildProperties="" description="" id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.toolchain.base.355152713" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
 					<folderInfo id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.toolchain.base.355152713.837590050" name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.toolchain.base.1093996012" name="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.toolchain.base" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.toolchain.base">
 							<option id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.option.target.processor.765792789" name="Processor" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.option.target.processor"/>
@@ -33,10 +33,16 @@
 							<option id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.option.addtools.createlisting.638481160" name="Create Extended Listing" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.option.addtools.createlisting"/>
 							<option id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.option.addtools.printsize.735771024" name="Print Size" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.option.addtools.printsize"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.GNU_ELF" id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.platform.base.222354748" isAbstract="false" name="OS X Platform" osList="macosx" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.platform.base"/>
-							<builder id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.builder.base.37539316" managedBuildOn="false" name="ARM OS X GNU Make builder (Sourcery Lite Linux).Default" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.builder.base"/>
-							<tool id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.assembler.base.1628909733" name="ARM OS X GCC Assembler (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.assembler.base"/>
-							<tool id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.c.compiler.base.725421749" name="ARM OS X GCC C Compiler (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.c.compiler.base"/>
-							<tool id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.cpp.compiler.base.1886064022" name="ARM OS X GCC C++ Compiler (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.cpp.compiler.base"/>
+							<builder id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.builder.base.37539316" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="ARM OS X GNU Make builder (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.builder.base"/>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.assembler.base.1628909733" name="ARM OS X GCC Assembler (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.assembler.base">
+								<inputType id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.assembler.base.input.1511400758" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.assembler.base.input"/>
+							</tool>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.c.compiler.base.725421749" name="ARM OS X GCC C Compiler (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.c.compiler.base">
+								<inputType id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.c.compiler.base.input.194862519" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.c.compiler.base.input"/>
+							</tool>
+							<tool id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.cpp.compiler.base.1886064022" name="ARM OS X GCC C++ Compiler (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.cpp.compiler.base">
+								<inputType id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.cpp.compiler.base.input.1433065356" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.cpp.compiler.base.input"/>
+							</tool>
 							<tool id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.c.linker.base.1702389260" name="ARM OS X GCC C Linker (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.c.linker.base"/>
 							<tool id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.cpp.linker.base.1511258519" name="ARM OS X GCC C++ Linker (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.cpp.linker.base"/>
 							<tool id="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.archiver.base.1955763855" name="ARM OS X GCC Archiver (Sourcery Lite Linux)" superClass="org.eclipse.cdt.cross.arm.gnu.sourcerylinux.macosx.archiver.base"/>
@@ -55,5 +61,8 @@
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/u-boot-2010.09"/>
 	</storageModule>
 </cproject>
