@@ -86,6 +86,8 @@ static void at91sam9263ek_nand_hw_init(void)
 	writel(1 << AT91SAM9263_ID_PIOB | 1 << AT91SAM9263_ID_PIOCDE,
 		&pmc->pcer);
 
+	/*Configure R/nB */
+	at91_set_pio_input(AT91_PIO_PORTB, 18, 1);
 	/* Configure RDY/BSY */
 	at91_set_pio_input(CONFIG_SYS_NAND_READY_PIN, 1);
 
